@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/main"
+    android:background="#fff8f8f8" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff00c3d9"
+        android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@+id/setting_btn_back" android:background="@drawable/btn_back"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="setting" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@+id/btn_edit_profile"
+        android:background="@drawable/eidt_profile_bg"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip" />
+    <RelativeLayout android:id="@+id/rl_wowo_range" android:background="@drawable/wowo_range_bg"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:id="@+id/tv_wowo_range" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginRight="10.0dip"
+            android:text="300 km" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_friend_range" android:background="@drawable/friend_range_bg"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:id="@+id/tv_friend_range" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginRight="10.0dip"
+            android:text="100 km" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_baidu_map" android:background="@drawable/rl_baidu_map"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:id="@+id/state" android:visibility="gone" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="正在下载:0%"
+            android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:id="@+id/btn_download_baidu" android:background="@drawable/btn_down"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip" android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@+id/btn_bind_email" android:background="@drawable/btn_bind_email"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <ImageButton android:id="@+id/btn_user_rule" android:background="@drawable/user_rule_bg"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <Button android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@+id/btn_logout"
+        android:background="@drawable/shape_login_btn" android:layout_width="fill_parent"
+        android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip"
+        android:layout_marginRight="20.0dip" android:text="logout" />
+</LinearLayout>

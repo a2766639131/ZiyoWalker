@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd8d8d8"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dp"
+        android:background="#ff00c3d9"
+        >
+        <ImageButton
+            android:id="@+id/mypage_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cur_username"
+            android:layout_centerInParent="true"
+            android:textSize="20.0dp"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:orientation="vertical">
+            <include layout="@layout/mypage_head"/>
+            <RelativeLayout android:orientation="horizontal" android:background="#ffffffff"
+                android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip"
+                android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_like_icon" android:background="@drawable/btn_myapge_like"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                    <TextView android:textSize="13.0dip" android:textColor="#ff333333"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip" android:text="收藏的目的地"
+                        android:layout_toRightOf="@id/iv_like_icon" android:layout_alignParentRight="true" />
+                    <ImageButton android:id="@+id/btn_more" android:background="@drawable/btn_mypape_more"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_share_location" android:background="@drawable/share_location_bg"
+                android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <CheckBox android:id="@+id/cb_share_position"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginRight="10.0dip"
+                    android:checked="true" android:button="@null" android:layout_alignParentRight="true"
+                    android:background="@drawable/selector_off_on"
+
+                    android:layout_centerVertical="true" />
+               <!-- <ImageButton android:id="@+id/btn_share" android:background="@drawable/btn_on"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip" android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+                <ImageButton android:id="@+id/btn_no_share" android:background="@drawable/btn_off"
+                    android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip" android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" /> -->
+            </RelativeLayout>
+
+            <ImageButton android:id="@+id/btn_foot_print" android:background="@drawable/foot_print_bg"
+                android:visibility="gone" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <ImageButton android:id="@+id/mypage_btn_setting" android:background="@drawable/btn_setting"
+                android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

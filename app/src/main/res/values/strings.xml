@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ZiyoWalker</string>
+    <string name="cur_username">username</string>
 </resources>
